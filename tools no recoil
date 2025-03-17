@@ -1,2 +1,221 @@
-#import zlib
-exec(marshal.loads(zlib.decompress(base64.b64decode('b'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''))))
+import os
+import time
+import sys
+import random
+from datetime import datetime
+from rich.console import Console
+import re
+import threading
+
+# إعداد الكونسول لاستخدامه في الطباعة
+console = Console()
+
+def random_color():
+    """اختيار لون عشوائي من قائمة الألوان المتاحة"""
+    colors = ["red", "green", "blue", "yellow", "magenta", "cyan", "white", "bright_red", "bright_green", "bright_blue"]
+    return random.choice(colors)
+
+def print_colored_message(message):
+    """طباعة رسالة بألوان عشوائية"""
+    color = random_color()  # اختر لون عشوائي
+    console.print(f"[{color}]{message}[/{color}]")
+
+def login():
+    """واجهة تسجيل الدخول"""
+    password = "saed_505"
+    print_colored_message("\n🔑 Please login to proceed.")
+    entered_password = input("Enter password: ").strip()
+
+    if entered_password == password:
+        print_colored_message("✅ Login successful!")
+        return True
+    else:
+        print_colored_message("❌ Incorrect password! Exiting...")
+        exit()
+
+def stop_tool_at(date_time):
+    """تحديد وقت إيقاف الأداة"""
+    current_time = datetime.now()
+    stop_time = datetime.strptime(date_time, "%Y-%m-%d %H:%M:%S")
+    
+    if current_time >= stop_time:
+        print_colored_message(f"\n⏳ The tool has reached its stop time ({stop_time}). Exiting...")
+        exit()
+    
+    while datetime.now() < stop_time:
+        remaining_time = stop_time - datetime.now()
+        time.sleep(1)
+
+def welcome_message():
+    """عرض رسالة الترحيب مع تأثير الحركة"""
+    welcome_text = "Welcome to the JOKER tool!"
+    for char in welcome_text:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.05)  # سرعة الحركة لكل حرف
+    print("\n")
+    time.sleep(1)
+
+def list_files(directory):
+    """قائمة الملفات في الدليل المحدد"""
+    files = [f for f in os.listdir(directory) if os.path.isfile(os.path.join(directory, f))]
+    return files
+
+def modify_pak(file_path, weapon_codes, output_directory):
+    """تعديل ملف .pak باستبدال أكواد الأسلحة"""
+    with open(file_path, "rb") as f:
+        data = f.read()
+
+    hex_data = data.hex().upper()
+    modified_data = bytearray(data)
+
+    for weapon_code in weapon_codes:
+        hex_code = ' '.join(f"{ord(c):02X}" for c in weapon_code)
+        hex_code = hex_code.replace(" ", "")
+        
+        occurrences = list(re.finditer(hex_code, hex_data))
+
+        if not occurrences:
+            print_colored_message(f"⚠️ Weapon code {weapon_code} not found.")
+        else:
+            for match in occurrences:
+                start_index = match.start()
+                byte_index = start_index // 2
+                for i in range(len(weapon_code)):
+                    modified_data[byte_index + i] = 0x00
+            print_colored_message(f"✅ Weapon code {weapon_code} modified successfully.")
+
+    os.makedirs(output_directory, exist_ok=True)
+    output_file_path = os.path.join(output_directory, os.path.basename(file_path))
+    with open(output_file_path, "wb") as f:
+        f.write(modified_data)
+
+    print_colored_message(f"\n🚀 Modification completed! New file saved at: {output_file_path}")
+
+def show_main_menu():
+    """عرض القائمة الرئيسية للأداة"""
+    print_colored_message("""
+           🔥 JOKER Tool - PUBG Pak Modifier 🔥
+===============================
+Please choose an option:
+1. Modify .pak files
+2. Join my Telegram channel
+3. View statistics
+4. Exit
+===============================
+""")
+
+def handle_main_menu_choice(choice):
+    """تعامل مع اختيار المستخدم في القائمة الرئيسية"""
+    if choice == '1':
+        print_colored_message("\n🔧 You chose to modify weapons!")
+        modify_pak_file()
+    elif choice == '2':
+        print_colored_message("\n🔗 Join my Telegram channel: https://t.me/joker_505_vip")
+    elif choice == '3':
+        print_colored_message("\n📊 View statistics: Here you could show stats if you wish")
+    elif choice == '4':
+        print_colored_message("\n👋 Exiting... See you next time!")
+        exit()
+    else:
+        print_colored_message("\n❌ Invalid choice! Please choose a valid option.")
+        return False  # Need to try again
+    return True
+
+def show_weapon_menu():
+    """عرض قائمة الأسلحة للمستخدم لاختيارها"""
+    print_colored_message("""
+    🔫 Choose a weapon to modify:
+    1. AKM
+    2. M146
+    3. HK416
+    4. MK14
+    5. M16A4
+    6. M762
+    7. QBZ
+    8. SCAR
+    9. DP12
+    10. FAMAS
+    11. Groza
+    12. M249
+    13. SKS
+    14. VSS
+    15. Custom weapon (you enter the code)
+    """)
+
+def modify_weapon_codes(choice):
+    """تعديل الأكواد بناءً على الاختيار"""
+    weapon_dict = {
+        '1': "C__AKM",
+        '2': "C__M146",
+        '3': "C__HK416",
+        '4': "MK14",
+        '5': "C__M16A4",
+        '6': "C__M762",
+        '7': "C__QBZ",
+        '8': "C__SCAR",
+        '9': "C__DP12",
+        '10': "C__FAMAS",
+        '11': "C__Groza",
+        '12': "C__M249",
+        '13': "C__SKS",
+        '14': "C__VSS",
+        '15': "Custom"  # الخيار لصنع سلاح مخصص
+    }
+
+    if choice in weapon_dict:
+        if choice == '15':
+            custom_code = input("Enter your custom weapon code: ").strip()
+            return [custom_code]
+        else:
+            weapon_code = weapon_dict[choice]
+            return [weapon_code]
+    else:
+        print_colored_message("❌ Invalid weapon choice!")
+        return []
+
+def modify_pak_file():
+    """تعديل ملف .pak"""
+    base_path = "/storage/emulated/0/Download/saed"
+    output_path = os.path.join(base_path, "Content", "Paks")
+
+    if not os.path.exists(base_path):
+        os.makedirs(base_path, exist_ok=True)
+
+    files = list_files(base_path)
+
+    if not files:
+        print_colored_message("❌ No files found in the directory.")
+    else:
+        print_colored_message("\n📂 Select a file to modify:")
+        for i, file in enumerate(files):
+            print_colored_message(f"{i + 1}. {file}")
+
+        choice = input("\nEnter the number of the file: ")
+
+        choice = int(choice) - 1
+        if 0 <= choice < len(files):
+            file_path = os.path.join(base_path, files[choice])
+
+            show_weapon_menu()
+            weapon_choice = input("\nEnter weapon number to modify: ")
+            weapon_codes = modify_weapon_codes(weapon_choice)
+
+            if weapon_codes:
+                modify_pak(file_path, weapon_codes, output_path)
+        else:
+            print_colored_message("❌ Invalid selection.")
+            modify_pak_file()
+
+def run_tool():
+    """تشغيل الأداة مع تسجيل الدخول، إيقاف الأداة، وقائمة الخيارات الرئيسية"""
+    login()  # تسجيل الدخول
+    threading.Thread(target=stop_tool_at, args=("2025-03-18 12:00:00",), daemon=True).start()  # تشغيل الوقت في الخلفية
+    welcome_message()  # عرض رسالة الترحيب
+    while True:
+        show_main_menu()
+        choice = input("Enter your choice [1/2/3/4]: ")
+        if handle_main_menu_choice(choice):
+            break  # يتم العودة للقائمة إذا تم الاختيار بنجاح
+
+run_tool()  # تشغيل الأداة
